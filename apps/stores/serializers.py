@@ -1,0 +1,28 @@
+from rest_framework import serializers
+from apps.stores.models import Inventory
+
+
+class InventoryListSerializer(serializers.ModelSerializer):
+    product_title = serializers.CharField(
+        source="product.title",
+        read_only=True
+    )
+    price = serializers.DecimalField(
+        source="product.price",
+        max_digits=10,
+        decimal_places=2,
+        read_only=True
+    )
+    category_name = serializers.CharField(
+        source="product.category.name",
+        read_only=True
+    )
+
+    class Meta:
+        model = Inventory
+        fields = [
+            "product_title",
+            "price",
+            "category_name",
+            "quantity",
+        ]
