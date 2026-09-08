@@ -217,7 +217,7 @@ GET /api/search/?q=phone
 Example with filters:
 
 ```text
-GET /api/search/?q=phone&category=Electronics&min_price=500&max_price=50000&in_stock=true
+GET http://127.0.0.1:8000/api/search/products/?q=phone&category=Electronics&min_price=500&max_price=50000&in_stock=true
 ```
 
 Search results are ordered based on relevance where applicable.
