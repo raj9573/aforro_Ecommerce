@@ -554,7 +554,7 @@ The expected services are:
 ```text
 Django Web
    ↓
-PostgreSQL
+SQLite3
 Redis
 Celery Worker
 ```
@@ -686,7 +686,7 @@ Add it to `.gitignore`:
           +-------------+-------------------+
                         |
                         v
-                    PostgreSQL
+                    SQLite3
                         
 Celery Flow:
 
@@ -791,7 +791,7 @@ Possible improvements include:
 * Automated unit and integration tests
 * JWT authentication
 * Redis distributed caching improvements
-* Full-text search using PostgreSQL
+* Full-text search using SQLite3
 * Elasticsearch/OpenSearch for large-scale search
 * Persistent inventory report history
 * Email service integration for order confirmation
@@ -821,7 +821,7 @@ Celery Beat
    +
 Django Signals
    +
-PostgreSQL
+SQLite3
    +
 Docker
    +
