@@ -7,7 +7,7 @@ A Django REST API backend demonstrating REST API design, database modeling, quer
 * Python
 * Django
 * Django REST Framework
-* PostgreSQL
+* SQLite
 * Redis
 * Celery
 * Docker
