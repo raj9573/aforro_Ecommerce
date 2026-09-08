@@ -508,7 +508,6 @@ The project uses Django ORM to optimize database access.
 Examples include:
 
 * `select_related()`
-* `prefetch_related()`
 * Aggregations
 * Conditional expressions
 * Filtering at database level
@@ -654,13 +653,6 @@ Sensitive configuration such as database credentials and other secrets should be
 Example:
 
 ```text
-SECRET_KEY=
-DATABASE_NAME=
-DATABASE_USER=
-DATABASE_PASSWORD=
-DATABASE_HOST=
-DATABASE_PORT=
-
 REDIS_HOST=
 REDIS_PORT=
 ```
