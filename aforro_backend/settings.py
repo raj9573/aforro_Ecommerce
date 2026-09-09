@@ -183,7 +183,7 @@ from celery.schedules import crontab
 CELERY_BEAT_SCHEDULE = {
     "generate-daily-inventory-summary": {
         "task": "apps.stores.tasks.generate_inventory_summary",
-        # "schedule": crontab(hour=23, minute=59),
-        "schedule": crontab(minute="*"),
+        "schedule": crontab(hour=23, minute=59),
+        # "schedule": crontab(minute="*"),
     },
 }
